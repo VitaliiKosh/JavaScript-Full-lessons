@@ -1,9 +1,12 @@
 const getTotalRevenue = (transactions) => {
   // put your code here
+  /*
   let result = 0;
   for (let i = 0; i < transactions.length; i += 1) {
     result += transactions[i].amount;
   }
+*/
+  const result = transactions.reduce((a, b) => a + b.amount, 0);
   return result;
 };
 
