@@ -5,7 +5,7 @@ const rooms = {
     { name: "Ann" },
     { name: "Vasyl" },
   ],
-  /*
+
   room2: [
     { name: "Dan" },
     { name: "Joshua" },
@@ -19,35 +19,23 @@ const rooms = {
     { name: "Alex" },
     { name: "John" },
   ],
-  */
 };
-
-/*
-const getPeople = (obj) => {
-  // put your code here
-  for (obj of rooms) {
-    Object.keys(obj).forEach((key) => {
-      console.log(key);
-    });
-  }
-};
-
-getPeople(rooms);
-*/
-/*
-const result = Object.keys(rooms).map((value, index) =>
-  Object.values(rooms[value])
-);
-console.log(result);
-*/
 
 const getPeople = (obj) => {
   // put your code here
-  for (i in rooms) {
-    console.log(i);
-    for (key in filters[i]) {
-      console.log;
-    }
+  /*
+  const newArrays = Object.values(obj);
+  if (newArrays.length > 0) {
+    const result = newArrays
+      .reduce((acc, element) => acc.concat(element))
+      .map((element) => element.name);
+    return result;
   }
-  console.log(Object.values(rooms));
+  return newArrays;
+*/
+  return Object.values(obj)
+    .reduce((acc, element) => acc.concat(element))
+    .map((element) => element.name);
 };
+
+console.log(getPeople(rooms));
