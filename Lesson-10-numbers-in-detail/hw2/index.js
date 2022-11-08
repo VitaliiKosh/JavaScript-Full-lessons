@@ -5,12 +5,16 @@ const getRandomNumbers = (length, from, to) => {
     return null;
   }
 
+  // eslint-disable-next-line no-array-constructor
   const arr = new Array();
   arr.length = length;
   // console.log(arr);
-  return arr
-    .fill()
-    .map((num) => (num = Math.trunc(Math.random() * (max - min) + min)));
+  return (
+    arr
+      .fill()
+      // eslint-disable-next-line no-return-assign, no-param-reassign
+      .map((num) => (num = Math.trunc(Math.random() * (max - min) + min)))
+  );
 };
 
 console.log(getRandomNumbers(5, 1.4, 3.22)); // ==> [2, 2, 2, 3, 2]
