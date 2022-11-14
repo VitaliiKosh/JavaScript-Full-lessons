@@ -1,0 +1,24 @@
+{
+  "name": "javascript-full-lessons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitaliiKosh/JavaScript-Full-lessons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitaliiKosh/JavaScript-Full-lessons/issues"
+  },
+  "homepage": "https://github.com/VitaliiKosh/JavaScript-Full-lessons#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
