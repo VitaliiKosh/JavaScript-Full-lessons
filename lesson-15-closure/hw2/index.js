@@ -1,4 +1,4 @@
-const createLogger = () => {
+export const createLogger = () => {
   const arrMemory = [];
 
   function warn(text) {
