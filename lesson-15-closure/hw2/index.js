@@ -22,8 +22,6 @@ export const createLogger = () => {
     return [...arrMemory.sort((a, b) => b.dateTime - a.dateTime)];
   }
 
-  //  console.log(arrMemory);
-
   return {
     log,
     error,
