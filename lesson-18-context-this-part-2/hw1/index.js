@@ -1,9 +1,28 @@
+// algo
+// create function which:
+// - - create memo of calling which closuring on returned func
+// - - push all call arg-s to memo
+// - - create callsHistory prop
+// - - return function (orig)
+
+//
 /**
- * @param {function} func
- * @return {function}
+ * param {function} func
+ * return {function}
  */
 function saveFuncCalls(func) {
-  // put your code here
+  const memo = [];
+
+  return function withMemo() {
+    // eslint-disable-next-line prefer-rest-params
+    memo.push(Array.from(arguments));
+    console.log("in withMemo func this", this);
+    console.log("memo:", memo);
+
+    withMemo.callsHistory = memo;
+    // eslint-disable-next-line prefer-rest-params
+    return func.apply(this, arguments);
+  };
 }
 
 // example 1
