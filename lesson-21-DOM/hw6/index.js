@@ -6,5 +6,5 @@ export function clearList() {
   return clearContent;
 }
 
-console.log(clearList());
+clearList();
 // clearList();
