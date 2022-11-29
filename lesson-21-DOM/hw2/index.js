@@ -1,4 +1,4 @@
-export function getItemList() {
+function getItemList() {
   const elementsList = document.querySelectorAll(".technology");
   console.dir(elementsList);
   return elementsList;
@@ -6,10 +6,10 @@ export function getItemList() {
 
 getItemList();
 
-export function getItemsArray() {
+function getItemsArray() {
   const elementsArray = document.querySelectorAll(".tool");
   console.dir(Array.from(elementsArray));
-  return elementsArray;
+  return Array.from(elementsArray);
 }
 
 getItemsArray();
