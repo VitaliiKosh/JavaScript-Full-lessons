@@ -19,9 +19,9 @@ export function getPlans() {
 
 console.log(getPlans());
 
-export function getGoals() {
+export function getGoal() {
   const goals = document.querySelector(".goal");
   return goals.outerHTML;
 }
 
-console.log(getGoals());
+console.log(getGoal());
