@@ -1,7 +1,7 @@
-export function clearList() {
-  const clear = document.querySelector(".categories");
-  clear.innerHTML = "";
+function clearList(value) {
+  const clearContent = document.querySelector(".categories");
+  clearContent.innerHTML = `${value}`;
   //  return clear;
 }
 
-clearList();
+clearList("");
