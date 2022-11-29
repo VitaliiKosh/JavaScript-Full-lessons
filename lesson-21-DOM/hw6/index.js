@@ -1,7 +1,7 @@
-function clearList(value) {
+function clearList() {
   const clearContent = document.querySelector(".categories");
-  clearContent.innerHTML = `${value}`;
+  clearContent.innerHTML = `${""}`;
   //  return clear;
 }
 
-clearList("");
+// clearList();
