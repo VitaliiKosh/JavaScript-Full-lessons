@@ -1,8 +1,7 @@
 export function setTitle(text) {
-  const title = document.querySelector(".title");
-  //  title.textContent = text;
-  //  return title.textContent;
-  return (title.textContent = text);
+  const titleNewText = document.querySelector(".title");
+  titleNewText.textContent = text;
+  return titleNewText.textContent;
 }
 
 console.log(setTitle("I will be very good Front-End developer!"));
