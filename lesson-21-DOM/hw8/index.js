@@ -19,4 +19,4 @@ export function finishList() {
   newElem.append(eigthElem);
 }
 
-finishList();
+// finishList();
