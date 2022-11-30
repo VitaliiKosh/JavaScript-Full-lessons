@@ -1,17 +1,10 @@
-tructor(price, city, type) {
-    this._price = price;
-    this._city = city;
-    this._type = type;
-  }
-
-  checkPrice() {
-    if (this._price > 1000) {
-      return true;
-    }
-    return false;
-  }
-
-  confirmOrder() {}
-
-  isValidType() {}
-}
+const squaredNumbers = () => {
+  const arr = Array.from(document.querySelectorAll(".number"));
+  //  console.log(arr);
+  arr.map((elemArr) => {
+    //    console.log(elemArr);
+    const searchNumberOfdata = elemArr.querySelector("[data-]");
+    const numberOfData = Object.values(searchNumberOfdata.dataset);
+    searchNumberOfdata.dataset.squaredNumber = numberOfData[0] ** 2;
+  });
+};
