@@ -1,12 +1,13 @@
 export function squaredNumbers() {
   const arr = Array.from(document.querySelectorAll(".number"));
-  console.log(arr);
+  //  console.log(arr);
 
   arr.map((arrElem) => {
-    const searchNumber = arrElem.querySelector("data-number");
-    const numberOfData = Object.values(searchNumber.dataset);
-    searchNumber.dataset.squaredNumber = numberOfData[0] ** 2;
+    const searchNumber = arrElem.dataset.number;
+    // console.log(searchNumber);
+    arrElem.setAttribute("data-squared-number", searchNumber ** 2);
+    // console.log(arrElem);
   });
 }
 
-squaredNumbers();
+// squaredNumbers();
