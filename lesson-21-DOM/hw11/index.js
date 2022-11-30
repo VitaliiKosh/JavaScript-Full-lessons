@@ -2,6 +2,7 @@ export function squaredNumbers() {
   const arr = Array.from(document.querySelectorAll(".number"));
   //  console.log(arr);
 
+  // eslint-disable-next-line array-callback-return
   arr.map((arrElem) => {
     const searchNumber = arrElem.dataset.number;
     // console.log(searchNumber);
