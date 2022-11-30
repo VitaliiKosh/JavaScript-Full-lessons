@@ -1,4 +1,4 @@
-function squaredNumbers() {
+export function squaredNumbers() {
   const arr = Array.from(document.querySelectorAll(".number"));
   console.log(arr);
 
