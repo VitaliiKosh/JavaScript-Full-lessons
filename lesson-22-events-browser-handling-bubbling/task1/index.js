@@ -2,6 +2,10 @@ const divElem = document.querySelector(".rect_div");
 const pElem = document.querySelector(".rect_p");
 const spanElem = document.querySelector(".rect_span");
 
+const clearBtn = document.querySelector(".clear-btn");
+const removeBtn = document.querySelector(".remove-handlers-btn");
+const attachBtn = document.querySelector(".attach-handlers-btn");
+
 const logTarget = (text, color) => {
   const eventsListElem = document.querySelector(".events-list");
 
