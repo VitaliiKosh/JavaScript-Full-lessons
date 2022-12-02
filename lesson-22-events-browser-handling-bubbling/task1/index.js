@@ -6,6 +6,9 @@ const clearBtn = document.querySelector(".clear-btn");
 const removeBtn = document.querySelector(".remove-handlers-btn");
 const attachBtn = document.querySelector(".attach-handlers-btn");
 
+const outputField = document.querySelector(".events-list");
+// outputField.value = "";
+
 const logTarget = (text, color) => {
   const eventsListElem = document.querySelector(".events-list");
 
@@ -43,3 +46,9 @@ function removeElement() {
   spanElem.removeEventListener("click", logGreenSpan);
 }
 removeBtn.addEventListener("click", removeElement);
+
+function clearElement() {
+  outputField.reset();
+  // outputField.trigger("reset");
+}
+clearBtn.addEventListener("click", clearElement);
