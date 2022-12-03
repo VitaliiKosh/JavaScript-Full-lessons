@@ -1,11 +1,16 @@
 const button = Array.from(document.querySelectorAll(".btn"));
-// const button = document.querySelectorAll(".btn");
-//   console.log(button);
+// console.log(button);
+
+// const firstButton = button[0];
+// const secondButton = button[1];
+
+const [firstButton, secondButton] = button;
+// console.log(firstButton);
+// console.log(secondButton);
 
 function handleClick(event) {
-  button.map((element) => element.textContent);
-  //  console.log(searchNumber); / ==> JavaScript  HTML
   console.log(event.target.textContent);
 }
 
-button.addEventListener("click", handleClick);
+firstButton.addEventListener("click", handleClick);
+secondButton.addEventListener("click", handleClick);
