@@ -4,7 +4,7 @@ export const getDiff = (startDate, endDate) => {
   const newEndDay = new Date(endDate).getTime();
   // console.log(newEndDay);
   const diffDate = Math.abs(Math.abs(newStartDate) - Math.abs(newEndDay));
-  console.log(diffDate); // ==> 82176645999
+  // console.log(diffDate); // ==> 82176645999
   // console.log(new Date(diffDate)); // ==> Wed Aug 09 1972 05:50:45 GMT+0300 (Восточная Европа, стандартное время)
   // 86400000ms in 1 day, 3600000ms in 1 hour, 60000ms in 1 minute, 1000ms in 1 second
 
