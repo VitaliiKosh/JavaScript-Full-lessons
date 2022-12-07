@@ -1,4 +1,4 @@
-const getDiff = (startDate, endDate) => {
+export const getDiff = (startDate, endDate) => {
   const newStartDate = new Date(startDate).getTime();
   const newEndDay = new Date(endDate).getTime();
   const diffDate = Math.abs(newStartDate - newEndDay);
