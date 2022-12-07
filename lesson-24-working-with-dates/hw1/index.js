@@ -21,7 +21,7 @@ export const getDiff = (startDate, endDate) => {
   );
   // console.log(seconds); // ==> 45
 
-  console.log(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+  return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 };
 /*
 const startDate = new Date(Date.UTC(2022, 11, 7, 7, 46, 64, 44));
@@ -31,4 +31,4 @@ const endDate = new Date(Date.UTC(2020, 3, 30, 4, 56, 18, 45));
 const startDate = new Date(Date.UTC(1956, 20, 5, 7, 46, 64, 44));
 const endDate = new Date(Date.UTC(2020, 3, 30, 4, 56, 18, 45));
 
-getDiff(startDate, endDate);
+console.log(getDiff(startDate, endDate));
