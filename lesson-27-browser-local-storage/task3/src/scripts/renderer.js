@@ -2,9 +2,8 @@ import { getItem } from "./storage";
 
 const listElem = document.querySelector(".list");
 
-const compareTasks = () {
-  
- return new Date(b.createDate) - new Date(a.createDate);
+const compareTasks = () => {
+  return new Date(b.createDate) - new Date(a.createDate);
 };
 
 const createCheckbox = ({ done, id }) => {
