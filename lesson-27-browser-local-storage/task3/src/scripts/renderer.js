@@ -2,7 +2,15 @@ import { getItem } from "./storage";
 
 const listElem = document.querySelector(".list");
 
-const compareTasks = () => {
+const compareTasks = (a, b) => {
+  if (a.done - b.done !== 0) {
+    return a.done - b.done;
+  }
+
+  if (a.done) {
+    return new Date(b.finishDate) - new Date(a.finishDate);
+  }
+
   return new Date(b.createDate) - new Date(a.createDate);
 };
 
