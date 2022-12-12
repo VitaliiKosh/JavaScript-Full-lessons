@@ -12,7 +12,7 @@ export const calc = (initValue) => {
       return this;
     },
 
-    substract(value) {
+    subtract(value) {
       result -= value;
       return this;
     },
@@ -29,8 +29,8 @@ export const calc = (initValue) => {
   return calculator;
 };
 
-// const result = calc(3).add(2).mult(4).substract(5).result(); // ==> 15
-// const result = calc(3).add(2).mult(4).div(10).substract(5).result(); // ==> -3
-const result = calc(7).add(3).mult(5).substract(10).div(10).result(); // ==> 4
+// const result = calc(3).add(2).mult(4).subtract(5).result(); // ==> 15
+// const result = calc(3).add(2).mult(4).div(10).subtract(5).result(); // ==> -3
+const result = calc(7).add(3).mult(5).subtract(10).div(10).result(); // ==> 4
 
 console.log(result);
