@@ -1,13 +1,11 @@
-export const mult = (value1) => (value2) => value1 * value2;
+export const mult = (a) => (b) => a * b;
 
-export const twice = mult(7)(2);
-// const result1 = twice(2);
+export const twice = mult(2);
+const result1 = twice(7);
 
-export const triple = mult(9)(3);
-// const result2 = triple(3);
+export const triple = mult(3);
+const result2 = triple(9);
 
 console.log(mult(5)(4)); // ==> 20
-// console.log(result1); // ==> 14
-// console.log(result2); // ==> 27
-console.log(twice); // ==> 14
-console.log(triple); // ==> 27
+console.log(result1); // ==> 14
+console.log(result2); // ==> 27
