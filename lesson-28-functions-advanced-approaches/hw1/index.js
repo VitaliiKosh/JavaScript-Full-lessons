@@ -1,11 +1,8 @@
 const shmoment = (initValue) => {
-  //  let time = new Date(initValue);
   const res = new Date(initValue);
 
   return {
     add(value, number) {
-      //      const res = new Date(initValue);
-
       // eslint-disable-next-line default-case
       switch (value) {
         case "years":
@@ -40,8 +37,6 @@ const shmoment = (initValue) => {
     },
 
     subtract(value, number) {
-      //      const res = new Date(initValue);
-
       // eslint-disable-next-line default-case
       switch (value) {
         case "years":
