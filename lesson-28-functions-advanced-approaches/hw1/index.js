@@ -1,4 +1,4 @@
-const shmoment = (initValue) => {
+export const shmoment = (initValue) => {
   const result = new Date(initValue);
 
   const calculator = {
