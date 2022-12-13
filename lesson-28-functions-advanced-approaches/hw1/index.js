@@ -2,6 +2,7 @@ export const shmoment = (initValue) => {
   const result = new Date(initValue);
 
   const calculator = {
+    // eslint-disable-next-line consistent-return
     add(value, number) {
       if (value === "years") {
         result.setFullYear(result.getFullYear() + number);
@@ -41,6 +42,7 @@ export const shmoment = (initValue) => {
       //      return result.toLocaleString();
     },
 
+    // eslint-disable-next-line consistent-return
     subtract(value, number) {
       if (value === "years") {
         result.setFullYear(result.getFullYear() - number);
@@ -88,5 +90,8 @@ export const shmoment = (initValue) => {
 };
 
 console.log(
-  shmoment(new Date(2019, 3, 5, 16, 15, 44)).subtract("years", 3).add("days", 5)
+  shmoment(new Date(2019, 3, 5, 16, 15, 44))
+    .subtract("years", 3)
+    .add("days", 5)
+    .result()
 );
