@@ -190,3 +190,84 @@ const onCreateTask = () => {
 
 const createBtnElem = document.querySelector(".create-task-btn");
 createBtnElem.addEventListener("click", onCreateTask);
+
+
+  const result = new Date(initValue);
+
+  const calculator = {
+    add(value, number) {
+      if (value === "years") {
+        result.setFullYear(result.getFullYear() + number);
+        return this;
+      }
+      if (value === "months") {
+        result.setMonth(result.getMonth() + number);
+        return this;
+      }
+      if (value === "days") {
+        result.setDate(result.getDate() + number);
+        return this;
+      }
+      if (value === "hours") {
+        result.setHours(result.getHours() + number);
+        return this;
+      }
+      if (value === "minutes") {
+        result.setMinutes(result.getMinutes() + number);
+        return this;
+      }
+      if (value === "seconds") {
+        result.setSeconds(result.getSeconds() + number);
+        return this;
+      }
+      if (value === "milliseconds") {
+        result.setMilliseconds(result.getMilliseconds() + number);
+        return this;
+      }
+      //  return res.toLocaleString();
+    },
+
+    subtract(value, number) {
+      if (value === "years") {
+        result.setFullYear(result.getFullYear() - number);
+        return this;
+      }
+      if (value === "months") {
+        result.setMonth(result.getMonth() - number);
+        return this;
+      }
+      if (value === "days") {
+        result.setDate(result.getDate() - number);
+        return this;
+      }
+      if (value === "hours") {
+        result.setHours(result.getHours() - number);
+        return this;
+      }
+      if (value === "minutes") {
+        result.setMinutes(result.getMinutes() - number);
+        return this;
+      }
+      if (value === "seconds") {
+        result.setSeconds(result.getSeconds() - number);
+        return this;
+      }
+      if (value === "milliseconds") {
+        result.setMilliseconds(result.getMilliseconds() - number);
+        return this;
+      }
+      //  return res.toLocaleString();
+    },
+  };
+
+  // return res.toLocaleString();
+  // result() {
+  //     return result;
+  //   },
+
+  return calculator;
+};
+console.log(shmoment(new Date(2019, 3, 5, 16, 15, 44)).subtract("years", 3));
+
+
+Datе.parse(initValue);
