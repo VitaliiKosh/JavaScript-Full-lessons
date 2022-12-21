@@ -11,6 +11,8 @@ const userDataPromise = new Promise((resolve) => {
  */
 
 /* ...code here */
+console.log(userDataPromise);
+// console.log(typeof userDataPromise); // object
 
 /*
  * Выведите в консоль переменную userData в обработчике промиса
@@ -18,6 +20,7 @@ const userDataPromise = new Promise((resolve) => {
  */
 userDataPromise.then(function onSuccess(userData) {
   /* ...code here */
+  console.log(userData); // {name: 'Tom', age: 17}
 });
 
 /*
@@ -27,6 +30,7 @@ userDataPromise.then(function onSuccess(userData) {
  * Tom и 17 достаньте с данных, которые приходят в ф-цию onSuccess
  */
 
-userDataPromise.then(function onSuccess(/* ...code here */) {
+userDataPromise.then(function onSuccess(userData) {
   /* ...code here */
+  console.log(`My name is ${userData.name}. I am ${userData.age} years old`);
 });

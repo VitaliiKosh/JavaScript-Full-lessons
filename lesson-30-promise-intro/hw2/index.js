@@ -7,6 +7,8 @@
 
 const successPromise = new Promise((resolve) => {
   /* ...code here */
+  const number = 67;
+  resolve(number);
 });
 
 /*
@@ -16,6 +18,7 @@ const successPromise = new Promise((resolve) => {
 
 successPromise.then(function onSuccess(number) {
   /* ...code here */
+  console.log(number ** 2);
 });
 
 /*
@@ -25,4 +28,5 @@ successPromise.then(function onSuccess(number) {
  */
 successPromise.catch(function onError() {
   /* ...code here */
+  console.log("I am an arror");
 });

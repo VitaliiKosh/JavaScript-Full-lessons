@@ -5,7 +5,10 @@
 
 const failedPromise = new Promise((resolve, reject) => {
   /* ...code here */
+  reject(new Error("Oops, error!"));
 });
+
+// console.log(typeof failedPromise); // object
 
 /*
  * выведите в консоль ошибку в ф-ции onError
@@ -13,4 +16,5 @@ const failedPromise = new Promise((resolve, reject) => {
 
 failedPromise.catch(function onError(error) {
   /* ...code here */
+  console.log(error);
 });
