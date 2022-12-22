@@ -1,4 +1,4 @@
-export const delay = (time) => {
+const delay = (time) => {
   const request = new Promise((resolve) => {
     setTimeout(() => {
       resolve();
@@ -7,4 +7,4 @@ export const delay = (time) => {
   return request;
 };
 
-delay(3000).then((data) => console.log("Done"));
+delay(3000).then(() => console.log("Done"));
