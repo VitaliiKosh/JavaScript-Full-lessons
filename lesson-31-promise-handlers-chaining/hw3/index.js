@@ -1,4 +1,4 @@
-const delay = (time) => {
+export const delay = (time) => {
   const request = new Promise((resolve) => {
     setTimeout(() => {
       resolve();
