@@ -10,7 +10,7 @@ const asyncNum1 = getValueWithDelay(56);
 const asyncNum2 = getValueWithDelay(4);
 const asyncNum3 = getValueWithDelay(10);
 
-const asyncSum = (...asyncNumbers) => {
+export const asyncSum = (...asyncNumbers) => {
   return Promise.allSettled(asyncNumbers).then((numbers) =>
     console.log(numbers)
   );
