@@ -9,7 +9,11 @@ const promiseNumber3 = Promise.resolve(8);
 
 // update code below
 
-export const resultPromise = null;
+// const resultPromise = null;
+
+const resultPromise = (...promiseNumbers) => {
+  return Promise.all(promiseNumbers).then((numbers) => console.log(numbers));
+};
 
 resultPromise
   .then((numbersList) => {
