@@ -1,23 +1,45 @@
-function getUsersList() {
+const baseUrl = "https://63b7b9a44d97e82aa3c41ae8.mockapi.io/api/v1/users";
+
+export function getUsersList() {
   // put your code here
+  return fetch(baseUrl).then((usersList) => usersList.json());
 }
 
 export function getUserById(userId) {
   // put your code here
+  return fetch(`${baseUrl}/${userId}`).then((userById) => userById.json());
 }
 
 export function createUser(userData) {
   // put your code here
+  return fetch(baseUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: JSON.stringify(userData),
+  });
 }
 
 export function deleteUser(userId) {
   // put your code here
+  return fetch(`${baseUrl}/${userId}`, {
+    method: "DELETE",
+  });
 }
 
 export function updateUser(userId, userData) {
   // put your code here
+  return fetch(`${baseUrl}/${userId}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: JSON.stringify(userData),
+  });
 }
 
+/*
 // examples
 getUsersList().then((users) => {
   console.log(users); // array of the user objects [{'id':'1', 'firstName':'Grayce' ... }, {'id':'2', 'firstName':'Ara' ... }, ...]
@@ -52,3 +74,4 @@ updateUser("1", updatedUserData).then(() => {
 deleteUser("2").then(() => {
   console.log("User updated");
 });
+*/
