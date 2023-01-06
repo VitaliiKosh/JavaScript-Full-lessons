@@ -1,4 +1,5 @@
-const baseUrl = "https://63b7b9a44d97e82aa3c41ae8.mockapi.io/api/v1/userform";
+// const baseUrl = "https://63b7b9a44d97e82aa3c41ae8.mockapi.io/todolist/userform";
+const baseUrl = "https://63a6c3fc59fd83b1bb3777cf.mockapi.io/todolist/userform";
 
 const submitBtn = document.querySelector(".submit-button");
 const formElem = document.querySelector(".login-form");
@@ -16,8 +17,8 @@ const sendToServer = (event) => {
   event.preventDefault();
   const { fields } = document.forms;
   const userData = Object.fromEntries(new FormData(fields));
-  //  console.log(userData);
-  fetch(baseUrl, {
+  console.log(userData);
+  return fetch(baseUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json;charset=utf-8",
