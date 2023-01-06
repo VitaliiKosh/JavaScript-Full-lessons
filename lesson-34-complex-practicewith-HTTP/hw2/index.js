@@ -25,9 +25,9 @@ const sendToServer = (event) => {
     },
     body: JSON.stringify(userData),
   })
-    .then((response) => JSON.stringify(response.json()))
+    .then((response) => response.json())
     .then((data) => {
-      alert(data);
+      alert(JSON.stringify(data));
       formElem.reset();
     });
 };
