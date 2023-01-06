@@ -23,10 +23,12 @@ const sendToServer = (event) => {
       "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify(userData),
-  }).then(() =>
-    alert(fetch(baseUrl).then((response) => JSON.stringify(response.json())))
-  );
-  formElem.reset();
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      alert(JSON.stringify(data));
+      formElem.reset();
+    });
 };
 
 formElem.addEventListener("input", checkValidation);

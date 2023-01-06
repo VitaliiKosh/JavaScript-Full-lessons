@@ -278,12 +278,11 @@ Datе.parse(initValue);
 const baseUrl = "https://63b7b9a44d97e82aa3c41ae8.mockapi.io/api/v1/userform";
 
 const submitBtn = document.querySelector(".submit-button");
-const loginForm = document.querySelector(".login-form");
+const formElem = document.querySelector(".login-form");
 const submitEvent = document.querySelector("form");
-const formElem = document.querySelector(".form-input");
 
 const checkValidation = () => {
-  if (loginForm.reportValidity()) {
+  if (formElem.reportValidity()) {
     submitBtn.removeAttribute("disabled");
   } else {
     submitBtn.setAttribute("disabled", true);
@@ -307,7 +306,7 @@ const sendToServer = (event) => {
   formElem.reset();
 };
 
-loginForm.addEventListener("input", checkValidation);
+formElem.addEventListener("input", checkValidation);
 
 submitEvent.addEventListener("submit", sendToServer);
 
