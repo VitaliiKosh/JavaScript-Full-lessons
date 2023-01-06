@@ -23,7 +23,7 @@ const sendToServer = (event) => {
     headers: {
       "Content-Type": "application/json;charset=utf-8",
     },
-    body: JSON.stringify(userData),
+    body: JSON.stringify(event),
   })
     .then((response) => response.json())
     .then((data) => {
