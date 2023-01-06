@@ -1,7 +1,11 @@
 const baseUrl = "https://63b7b9a44d97e82aa3c41ae8.mockapi.io/api/v1/userform";
 
+const submitBtn = document.querySelector(".submit-button");
+const formElem = document.querySelector(".login-form");
+const submitEvent = document.querySelector("form");
+
 const checkValidation = () => {
-  if (loginForm.reportValidity()) {
+  if (formElem.reportValidity()) {
     submitBtn.removeAttribute("disabled");
   } else {
     submitBtn.setAttribute("disabled", true);
@@ -25,10 +29,6 @@ const sendToServer = (event) => {
   formElem.reset();
 };
 
-const submitBtn = document.querySelector(".submit-button");
+formElem.addEventListener("input", checkValidation);
 
-const loginForm = document.querySelector(".login-form");
-loginForm.addEventListener("input", checkValidation);
-
-const sumbitEvent = document.querySelector("form");
-sumbitEvent.addEventListener("submit", sendToServer);
+submitEvent.addEventListener("submit", sendToServer);

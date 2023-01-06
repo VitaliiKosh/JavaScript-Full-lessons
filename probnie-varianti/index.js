@@ -271,3 +271,81 @@ console.log(shmoment(new Date(2019, 3, 5, 16, 15, 44)).subtract("years", 3));
 
 
 Datе.parse(initValue);
+
+
+// 34 urok hw2
+
+const baseUrl = "https://63b7b9a44d97e82aa3c41ae8.mockapi.io/api/v1/userform";
+
+const submitBtn = document.querySelector(".submit-button");
+const loginForm = document.querySelector(".login-form");
+const submitEvent = document.querySelector("form");
+const formElem = document.querySelector(".form-input");
+
+const checkValidation = () => {
+  if (loginForm.reportValidity()) {
+    submitBtn.removeAttribute("disabled");
+  } else {
+    submitBtn.setAttribute("disabled", true);
+  }
+};
+
+const sendToServer = (event) => {
+  event.preventDefault();
+  const { fields } = document.forms;
+  const userData = Object.fromEntries(new FormData(fields));
+  console.log(userData);
+  fetch(baseUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: JSON.stringify(userData),
+  }).then(() =>
+    alert(fetch(baseUrl).then((response) => JSON.stringify(response.json())))
+  );
+  formElem.reset();
+};
+
+loginForm.addEventListener("input", checkValidation);
+
+submitEvent.addEventListener("submit", sendToServer);
+
+// 34 urok hw2 - ne poluchilos
+const baseUrl = "https://63b7b9a44d97e82aa3c41ae8.mockapi.io/api/v1/userform";
+
+const formElem = document.querySelector(".login-form");
+const buttonElem = document.querySelector(".submit-button");
+
+const validate = () => {
+  if (formElem.reportValidity()) {
+    buttonElem.removeAttribute("disabled");
+  } else {
+    buttonElem.setAttribute("disabled", true);
+  }
+};
+
+formElem.addEventListener("input", validate);
+
+const sendToServer = (event) => {
+  event.preventDefault();
+  const { fields } = document.forms;
+  const userData = Object.fromEntries(new FormData(fields));
+  console.log(userData);
+  fetch(baseUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: JSON.stringify(userData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      alert(JSON.stringify(data));
+      formElem.reset();
+    });
+};
+
+formElem.addEventListener("input", validate);
+
+buttonElem.addEventListener("submit", sendToServer);
