@@ -13,17 +13,17 @@ const validation = () => {
   }
 };
 
-const sendToServer = (event) => {
+const sendToServer = (userData) => {
   event.preventDefault();
   const { fields } = document.forms;
-  const userData = Object.fromEntries(new FormData(fields));
+  Object.fromEntries(new FormData(fields));
   console.log(userData);
   return fetch(baseUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json;charset=utf-8",
     },
-    body: JSON.stringify(event),
+    body: JSON.stringify(userData),
   })
     .then((response) => response.json())
     .then((data) => {
