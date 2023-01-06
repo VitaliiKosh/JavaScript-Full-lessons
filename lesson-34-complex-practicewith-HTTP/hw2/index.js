@@ -16,7 +16,7 @@ const sendToServer = (event) => {
   event.preventDefault();
   const { fields } = document.forms;
   const userData = Object.fromEntries(new FormData(fields));
-  console.log(userData);
+  //  console.log(userData);
   fetch(baseUrl, {
     method: "POST",
     headers: {
