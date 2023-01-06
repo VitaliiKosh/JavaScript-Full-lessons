@@ -5,7 +5,7 @@ const submitBtn = document.querySelector(".submit-button");
 const formElem = document.querySelector(".login-form");
 const submitEvent = document.querySelector("form");
 
-const checkValidation = () => {
+const validation = () => {
   if (formElem.reportValidity()) {
     submitBtn.removeAttribute("disabled");
   } else {
@@ -25,13 +25,13 @@ const sendToServer = (event) => {
     },
     body: JSON.stringify(userData),
   })
-    .then((response) => response.json())
+    .then((response) => JSON.stringify(response.json()))
     .then((data) => {
       alert(JSON.stringify(data));
       formElem.reset();
     });
 };
 
-formElem.addEventListener("input", checkValidation);
+formElem.addEventListener("input", validation);
 
 submitEvent.addEventListener("submit", sendToServer);
