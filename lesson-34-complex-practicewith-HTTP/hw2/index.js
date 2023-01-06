@@ -1,37 +1,41 @@
-const baseUrl =
-  "https://63b7e3f64f17e3a931df2527.mockapi.io/userslist/userform";
+const _baseUrl = "https://636a8bfbc07d8f936da160be.mockapi.io/api/v1/users";
 
-const submitBtn = document.querySelector(".submit-button");
 const formElem = document.querySelector(".login-form");
-const submitEvent = document.querySelector("form");
+const submitBtnElem = document.querySelector(".submit-button");
 
-const validation = () => {
-  if (formElem.reportValidity()) {
-    submitBtn.removeAttribute("disabled");
+const onInput = () => {
+  const isValidForm = formElem.reportValidity();
+  if (isValidForm) {
+    submitBtnElem.removeAttribute("disabled");
   } else {
-    submitBtn.setAttribute("disabled", true);
+    submitBtnElem.setAttribute("disabled", true);
   }
 };
 
-const sendToServer = (event) => {
-  event.preventDefault();
-  const { fields } = document.forms;
-  const userData = Object.fromEntries(new FormData(fields));
-  console.log(userData);
-  return fetch(baseUrl, {
+formElem.addEventListener("input", onInput);
+
+const _createUser = (data) =>
+  fetch(_baseUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json;charset=utf-8",
     },
-    body: JSON.stringify(event),
-  })
+    body: JSON.stringify(data),
+  });
+
+const onSubmitForm = (event) => {
+  event.preventDefault();
+
+  const data = Array.from(new FormData(event.target)).reduce(
+    (acc, item) => ({ ...acc, [item[0]]: item[1] }),
+    {}
+  );
+  _createUser(data)
     .then((response) => response.json())
-    .then((data) => {
-      alert(JSON.stringify(data));
-      formElem.reset();
+    .then((task) => {
+      event.target.reset();
+      alert(JSON.stringify(task));
     });
 };
 
-formElem.addEventListener("input", validation);
-
-submitEvent.addEventListener("submit", sendToServer);
+formElem.addEventListener("submit", onSubmitForm);
