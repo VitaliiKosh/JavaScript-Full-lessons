@@ -14,7 +14,7 @@ const onInput = () => {
 
 formElem.addEventListener("input", onInput);
 
-const _createUser = (data) =>
+const createUser = (data) =>
   fetch(_baseUrl, {
     method: "POST",
     headers: {
@@ -30,7 +30,7 @@ const onSubmitForm = (event) => {
     (acc, item) => ({ ...acc, [item[0]]: item[1] }),
     {}
   );
-  _createUser(data)
+  createUser(data)
     .then((response) => response.json())
     .then((task) => {
       event.target.reset();
