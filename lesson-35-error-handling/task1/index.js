@@ -5,7 +5,7 @@ window.addEventListener("error", function onUnhandledError(err) {
 let userParsingResult;
 
 try {
-  const user = JSON.parse('{"User name":"Tom"}');
+  const user = JSON.parse('{"User name":"Tom"}'); // valid json
   console.log("User data: ", user);
   userParsingResult = "success";
 } catch (e) {
@@ -17,7 +17,7 @@ try {
 let productParsingResult;
 
 try {
-  const product = JSON.parse('{"Product name":"laptop"');
+  const product = JSON.parse('{"Product name":"laptop"'); // not valid json
   console.log("Product data: ", product);
   productParsingResult = "success";
 } catch (e) {
