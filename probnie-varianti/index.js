@@ -442,7 +442,7 @@ formElem.addEventListener("input", validation);
 submitEvent.addEventListener("submit", sendToServer);
 */
 
-// 35 urok task 3
+// 36 urok hw1
 export const getUsersBlogs = async (users) => {
   let resLinks;
   try {
