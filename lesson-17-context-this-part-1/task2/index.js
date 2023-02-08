@@ -1,5 +1,5 @@
 const callbackPrompt = {
-  message: "Tell me your phonenumber",
+  message: 'Tell me your phonenumber',
   showPrompt() {
     const phoneNumber = prompt(this.message);
     console.log(phoneNumber);

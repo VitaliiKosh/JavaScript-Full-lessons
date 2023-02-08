@@ -10,7 +10,7 @@ const vehicle = {
 };
 
 const ship = {
-  name: "Argo",
+  name: 'Argo',
   startMachine() {
     console.log(`${this.name} lifting anchor up`);
     vehicle.move.call(ship);
@@ -26,7 +26,7 @@ Object.setPrototypeOf(ship, vehicle);
 
 function getOwnProps(ship) {
   for (let prop in ship) {
-    if (ship.hasOwnProperty(prop) && typeof ship[prop] !== "function") {
+    if (ship.hasOwnProperty(prop) && typeof ship[prop] !== 'function') {
       console.log(prop);
     }
   }
@@ -41,7 +41,7 @@ console.log(typeof ship.stop);
 
 export function getOwnProps(obj) {
   for (let prop in obj) {
-    if (obj.hasOwnProperty(prop) && typeof obj[prop] !== "function") {
+    if (obj.hasOwnProperty(prop) && typeof obj[prop] !== 'function') {
       return [prop];
     }
   }

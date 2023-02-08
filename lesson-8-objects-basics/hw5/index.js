@@ -14,7 +14,7 @@ const getAdults = (obj) => {
   return filtered;
 };
 // examples
-console.log(getAdults({ "John Doe": 19, Tom: 17, Bob: 18 })); // ==> { 'John Doe': 19, Bob: 18 }
+console.log(getAdults({ 'John Doe': 19, Tom: 17, Bob: 18 })); // ==> { 'John Doe': 19, Bob: 18 }
 console.log(getAdults({ Ann: 56, Andrey: 7 })); // ==> { Ann: 56 }
-console.log(getAdults({ "Max Payne": 16, Josetta: 17, Clarence: 14 })); // ==> {}
+console.log(getAdults({ 'Max Payne': 16, Josetta: 17, Clarence: 14 })); // ==> {}
 console.log(getAdults({ Adrian: 45, Alex: 37, Robert: 15, Marek: 64 })); // ==> {Adrian: 45, Alex: 37, Marek: 64}

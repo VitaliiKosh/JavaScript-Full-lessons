@@ -1,4 +1,4 @@
-const button = Array.from(document.querySelectorAll(".btn"));
+const button = Array.from(document.querySelectorAll('.btn'));
 // console.log(button);
 
 // const firstButton = button[0];
@@ -12,5 +12,5 @@ function handleClick(event) {
   console.log(event.target.textContent);
 }
 
-firstButton.addEventListener("click", handleClick);
-secondButton.addEventListener("click", handleClick);
+firstButton.addEventListener('click', handleClick);
+secondButton.addEventListener('click', handleClick);

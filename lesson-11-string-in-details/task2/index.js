@@ -1,23 +1,23 @@
 const contacts = [
   {
-    name: "Ann",
-    phoneNumber: "444-44-44",
+    name: 'Ann',
+    phoneNumber: '444-44-44',
   },
   {
-    name: "John",
-    phoneNumber: "333-33-33",
+    name: 'John',
+    phoneNumber: '333-33-33',
   },
   {
-    name: "Stephan",
-    phoneNumber: "555-55-55",
+    name: 'Stephan',
+    phoneNumber: '555-55-55',
   },
   {
-    name: "Suzy",
-    phoneNumber: "222-22-22",
+    name: 'Suzy',
+    phoneNumber: '222-22-22',
   },
   {
-    name: "Adel",
-    phoneNumber: "111-11-11",
+    name: 'Adel',
+    phoneNumber: '111-11-11',
   },
 ];
 

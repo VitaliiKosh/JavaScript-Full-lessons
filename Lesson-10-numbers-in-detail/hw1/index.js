@@ -15,6 +15,6 @@ function getTotalPrice(arr) {
   // console.log(amount);
   // return Math.floor(amount * 100) / 100;
   // return amount.toFixed(2);
-  return "$" + Math.floor(amount * 100) / 100;
+  return '$' + Math.floor(amount * 100) / 100;
 }
 console.log(getTotalPrice([3.658, 12.799, 3.254, 5.632]));

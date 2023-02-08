@@ -1,11 +1,11 @@
 export const pinger = (count, period) => {
   // put your code here
   let i = count;
-  console.log("Ping");
+  console.log('Ping');
   const interval = setInterval(() => {
     // eslint-disable-next-line no-plusplus
     if (--i > 0) {
-      console.log("Ping");
+      console.log('Ping');
     } else {
       clearInterval(interval);
     }

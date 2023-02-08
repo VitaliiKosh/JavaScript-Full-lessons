@@ -22,8 +22,8 @@ const withdraw = (clients, balances, client, amount) => {
 };
 
 // input
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "John", 50)); // ==> 37
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "User", 10)); // ==> -1
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "Ann", 1350)); // ==> 50
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "John", 60)); // ==> 27
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "User", 10)); // ==> -1
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50)); // ==> 37
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'User', 10)); // ==> -1
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'Ann', 1350)); // ==> 50
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 60)); // ==> 27
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'User', 10)); // ==> -1

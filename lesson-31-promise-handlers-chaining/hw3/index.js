@@ -7,4 +7,4 @@ export const delay = (time) => {
   return request;
 };
 
-delay(3000).then(() => console.log("Done"));
+delay(3000).then(() => console.log('Done'));

@@ -1,6 +1,6 @@
 /* ===> 1 <=== */
 const student = {
-  name: "Tom",
+  name: 'Tom',
 };
 
 function sayName() {
@@ -18,12 +18,12 @@ sayStudentName();
  * создайте ф-цию sayBruceName которая будет выводить в консоль имя 'Bruce'
  * используйте ф-цию sayName и .bind с нужным объектом
  */
-const sayBruceName = sayName.bind({ name: "Bruce" });
+const sayBruceName = sayName.bind({ name: 'Bruce' });
 sayBruceName();
 
 /* ===> 2 <=== */
 const company = {
-  companyName: "Microsoft",
+  companyName: 'Microsoft',
 };
 
 function greeting(firstName, lastName) {
@@ -38,13 +38,13 @@ function greeting(firstName, lastName) {
  * используйте ф-цию greeting и .bind с нужным объектом и аргументами
  * specialGreeting не должна принимать ни одного аргумента
  */
-const specialGreeting = greeting.bind(company, "Bob", "Marley");
+const specialGreeting = greeting.bind(company, 'Bob', 'Marley');
 specialGreeting();
 
 /* ===> 3 <=== */
 const country = {
-  countryName: "Ukraine",
-  capital: "Kyiv",
+  countryName: 'Ukraine',
+  capital: 'Kyiv',
 };
 
 function getPopulation(population) {
@@ -64,9 +64,9 @@ console.log(getUkrainePopulation());
 /* ===> 4 <=== */
 const transaction = {
   amount: 1200,
-  operation: "sell",
-  currency: "USD",
-  exchange: "NYSE",
+  operation: 'sell',
+  currency: 'USD',
+  exchange: 'NYSE',
   printTransaction() {
     console.log(
       `${this.amount} ${this.currency} - ${this.operation} on ${this.exchange}`
@@ -76,9 +76,9 @@ const transaction = {
 
 const anotherTransaction = {
   amount: 400,
-  operation: "buy",
-  currency: "USD",
-  exchange: "NASDAQ",
+  operation: 'buy',
+  currency: 'USD',
+  exchange: 'NASDAQ',
 };
 
 /*

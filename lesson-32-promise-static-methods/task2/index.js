@@ -6,7 +6,7 @@ const request = (url) =>
     setTimeout(() => {
       resolve({
         userData: {
-          name: "Tom",
+          name: 'Tom',
           age: 17,
         },
         source: url,
@@ -15,9 +15,9 @@ const request = (url) =>
   });
 
 const servers = [
-  "https://server.com/us",
-  "https://server.com/eu",
-  "https://server.com/au",
+  'https://server.com/us',
+  'https://server.com/eu',
+  'https://server.com/au',
 ];
 
 export const getUserASAP = (userId) => {
@@ -28,4 +28,4 @@ export const getUserASAP = (userId) => {
   return Promise.race(requests);
 };
 
-getUserASAP("user-id-1").then((res) => console.log(res));
+getUserASAP('user-id-1').then((res) => console.log(res));

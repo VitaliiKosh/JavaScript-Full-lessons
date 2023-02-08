@@ -33,12 +33,12 @@ function mergeObjectsV4(obj1, obj2) {
 
 // examples
 const obj1 = {
-  name: "Tom",
+  name: 'Tom',
   age: 17,
 };
 
 const obj2 = {
-  name: "Bob",
+  name: 'Bob',
   student: false,
 };
 

@@ -5,7 +5,7 @@
 
 const failedPromise = new Promise((resolve, reject) => {
   /* ...code here */
-  reject(new Error("Oops, error!"));
+  reject(new Error('Oops, error!'));
 });
 
 // console.log(typeof failedPromise); // object

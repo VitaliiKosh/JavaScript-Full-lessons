@@ -18,5 +18,5 @@ const pickProps = (obj, props) => {
 };
 
 // examples
-console.log(pickProps({ a: 1, b: 2, c: 3 }, ["a", "c"])); // ==> { a: 1, c: 3 }
-console.log(pickProps({ a: 1, b: 2, c: 3, d: 5 }, ["a", "c", "d", "hex"])); // ==> { a: 1, c: 3, d: 5 }
+console.log(pickProps({ a: 1, b: 2, c: 3 }, ['a', 'c'])); // ==> { a: 1, c: 3 }
+console.log(pickProps({ a: 1, b: 2, c: 3, d: 5 }, ['a', 'c', 'd', 'hex'])); // ==> { a: 1, c: 3, d: 5 }

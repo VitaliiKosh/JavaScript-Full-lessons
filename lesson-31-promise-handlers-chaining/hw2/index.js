@@ -3,7 +3,7 @@ const serverResponsePromise = new Promise((resolve) => {
     ok: true,
     json() {
       return Promise.resolve({
-        name: "John",
+        name: 'John',
         age: 20,
       });
     },
@@ -25,5 +25,5 @@ serverResponsePromise
   });
 
 console.log(
-  "!!! Обрати внимание, что этот текст вывелся самым первым. Ведь это синхронный код, а промисы - асинхронны !!!"
+  '!!! Обрати внимание, что этот текст вывелся самым первым. Ведь это синхронный код, а промисы - асинхронны !!!'
 );

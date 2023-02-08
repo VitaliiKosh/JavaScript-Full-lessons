@@ -4,37 +4,37 @@ export const shmoment = (initValue) => {
   const calculator = {
     // eslint-disable-next-line consistent-return
     add(value, number) {
-      if (value === "years") {
+      if (value === 'years') {
         result.setFullYear(result.getFullYear() + number);
         return this;
       }
 
-      if (value === "months") {
+      if (value === 'months') {
         result.setMonth(result.getMonth() + number);
         return this;
       }
 
-      if (value === "days") {
+      if (value === 'days') {
         result.setDate(result.getDate() + number);
         return this;
       }
 
-      if (value === "hours") {
+      if (value === 'hours') {
         result.setHours(result.getHours() + number);
         return this;
       }
 
-      if (value === "minutes") {
+      if (value === 'minutes') {
         result.setMinutes(result.getMinutes() + number);
         return this;
       }
 
-      if (value === "seconds") {
+      if (value === 'seconds') {
         result.setSeconds(result.getSeconds() + number);
         return this;
       }
 
-      if (value === "milliseconds") {
+      if (value === 'milliseconds') {
         result.setMilliseconds(result.getMilliseconds() + number);
         return this;
       }
@@ -44,37 +44,37 @@ export const shmoment = (initValue) => {
 
     // eslint-disable-next-line consistent-return
     subtract(value, number) {
-      if (value === "years") {
+      if (value === 'years') {
         result.setFullYear(result.getFullYear() - number);
         return this;
       }
 
-      if (value === "months") {
+      if (value === 'months') {
         result.setMonth(result.getMonth() - number);
         return this;
       }
 
-      if (value === "days") {
+      if (value === 'days') {
         result.setDate(result.getDate() - number);
         return this;
       }
 
-      if (value === "hours") {
+      if (value === 'hours') {
         result.setHours(result.getHours() - number);
         return this;
       }
 
-      if (value === "minutes") {
+      if (value === 'minutes') {
         result.setMinutes(result.getMinutes() - number);
         return this;
       }
 
-      if (value === "seconds") {
+      if (value === 'seconds') {
         result.setSeconds(result.getSeconds() - number);
         return this;
       }
 
-      if (value === "milliseconds") {
+      if (value === 'milliseconds') {
         result.setMilliseconds(result.getMilliseconds() - number);
         return this;
       }
@@ -91,7 +91,7 @@ export const shmoment = (initValue) => {
 
 console.log(
   shmoment(new Date(2019, 3, 5, 16, 15, 44))
-    .subtract("years", 3)
-    .add("days", 5)
+    .subtract('years', 3)
+    .add('days', 5)
     .result()
 );

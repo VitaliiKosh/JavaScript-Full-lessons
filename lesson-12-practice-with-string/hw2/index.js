@@ -19,10 +19,10 @@ const cleanTransactionsList = (arr) => {
     newArr[index] = +newArr[index];
     //    if (typeof index === "number") {
     if (!isNaN(parseFloat(newArr[index])) && isFinite(newArr[index])) {
-      trimmedArray.push(`${"$"}` + newArr[index].toFixed(2));
+      trimmedArray.push(`${'$'}` + newArr[index].toFixed(2));
     }
   }
   return trimmedArray;
 };
 
-console.log(cleanTransactionsList(["  1.9 ", "16.4", 17, " 1 dollar "])); // ==> ['$1.90', '$16.40', '$17.00']
+console.log(cleanTransactionsList(['  1.9 ', '16.4', 17, ' 1 dollar '])); // ==> ['$1.90', '$16.40', '$17.00']

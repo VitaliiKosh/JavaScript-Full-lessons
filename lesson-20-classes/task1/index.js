@@ -25,12 +25,12 @@ class User {
   }
 
   static createEmpty() {
-    return new User("", null);
+    return new User('', null);
   }
 }
 
-const user1 = new User("Tom", 17);
-const user2 = new User("John", 21);
+const user1 = new User('Tom', 17);
+const user2 = new User('John', 21);
 
 user1.sayHi(); // ==> Hi, I am Tom
 user2.requestNewPhoto(); // ==> New photo request was sent for John

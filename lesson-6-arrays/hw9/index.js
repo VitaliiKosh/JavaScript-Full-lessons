@@ -23,6 +23,6 @@ function withdraw(clients, balances, client, amount) {
   }
 }
 
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "Ann", 1350));
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "John", 60));
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "User", 10));
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'Ann', 1350));
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 60));
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'User', 10));

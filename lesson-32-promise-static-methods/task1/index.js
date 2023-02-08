@@ -16,6 +16,6 @@ export const asyncSum = (...asyncNumbers) => {
   );
 };
 
-asyncSum(asyncNum1, Promise.reject(new Error("err")), asyncNum3).then(
+asyncSum(asyncNum1, Promise.reject(new Error('err')), asyncNum3).then(
   (result) => console.log(result)
 );

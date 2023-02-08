@@ -1,8 +1,8 @@
-import { renderTasks } from "./renderer.js";
-import { getItem, setItem } from "./storage.js";
+import { renderTasks } from './renderer.js';
+import { getItem, setItem } from './storage.js';
 
 export const onCreateTask = () => {
-  const taskTitleInputElem = document.querySelector(".task-input");
+  const taskTitleInputElem = document.querySelector('.task-input');
 
   const text = taskTitleInputElem.value;
 
@@ -10,8 +10,8 @@ export const onCreateTask = () => {
     return;
   }
 
-  taskTitleInputElem.value = "";
-  const tasksList = getItem("tasksList") || [];
+  taskTitleInputElem.value = '';
+  const tasksList = getItem('tasksList') || [];
   const newTasksList = tasksList.concat({
     text,
     done: false,
@@ -19,7 +19,7 @@ export const onCreateTask = () => {
     id: Math.random().toString(),
   });
 
-  setItem("tasksList", newTasksList);
+  setItem('tasksList', newTasksList);
 
   renderTasks();
 };

@@ -8,7 +8,7 @@ function getKeys(obj) {
 }
 
 // examples
-getKeys({ name: "Denis", city: "Warsaw", englishLevel: "A1" });
+getKeys({ name: 'Denis', city: 'Warsaw', englishLevel: 'A1' });
 // prints ===>
 // name
 // city

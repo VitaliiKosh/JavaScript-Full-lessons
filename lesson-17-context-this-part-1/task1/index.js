@@ -1,7 +1,7 @@
 /*
 const user = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: 'John',
+  lastName: 'Doe',
 };
 
 user.getFullName = function () {
@@ -13,8 +13,8 @@ console.log(user.getFullName());
 */
 
 const user = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: 'John',
+  lastName: 'Doe',
   getFullName() {
     return `${this.firstName} ${this.lastName}`;
   },

@@ -20,7 +20,7 @@ export class Order {
   }
 
   isValidType() {
-    //  return type === "Buy" || type === "Sell" ? true : false;
-    return !!(this.type === "Buy" || this.type === "Sell");
+    // return type === 'Buy' || type === 'Sell' ? true : false;
+    return !!(this.type === 'Buy' || this.type === 'Sell');
   }
 }

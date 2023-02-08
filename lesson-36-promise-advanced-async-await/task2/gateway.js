@@ -4,7 +4,7 @@ export const fetchUserData = async (userName) => {
     // eslint-disable-next-line no-return-await
     return await response.json();
   }
-  throw new Error("Failed to load data");
+  throw new Error('Failed to load data');
 };
 
 export const fetchRepositories = async (url) => {
@@ -13,5 +13,5 @@ export const fetchRepositories = async (url) => {
     // eslint-disable-next-line no-return-await
     return await response.json();
   }
-  throw new Error("Failed to load data");
+  throw new Error('Failed to load data');
 };

@@ -45,7 +45,7 @@ export class UserRepository {
 }
 
 // examples
-const user = new User("1", "Tom", "session-id");
+const user = new User('1', 'Tom', 'session-id');
 
 // получить свойства можем
 console.log(user.id); // ===> '1'

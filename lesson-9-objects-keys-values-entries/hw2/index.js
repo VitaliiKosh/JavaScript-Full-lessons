@@ -38,10 +38,10 @@ function addPropertyV4(userData, userId) {
 
 // examples
 const user = {
-  name: "Sam",
+  name: 'Sam',
 };
 
-console.log(addPropertyV1(user, "1234567")); // ==> { name: 'Sam', id: '1234567' }
-console.log(addPropertyV2(user, "2346589"));
-console.log(addPropertyV3(user, "7896546"));
-console.log(addPropertyV4(user, "7892546"));
+console.log(addPropertyV1(user, '1234567')); // ==> { name: 'Sam', id: '1234567' }
+console.log(addPropertyV2(user, '2346589'));
+console.log(addPropertyV3(user, '7896546'));
+console.log(addPropertyV4(user, '7892546'));

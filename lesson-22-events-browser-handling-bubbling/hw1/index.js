@@ -1,7 +1,7 @@
-const buttonElem = document.querySelector(".create-btn");
+const buttonElem = document.querySelector('.create-btn');
 
 function handleClick() {
-  alert("done");
+  alert('done');
 }
 
-buttonElem.addEventListener("click", handleClick);
+buttonElem.addEventListener('click', handleClick);

@@ -1,5 +1,5 @@
 const splitText = (text, len) => {
-  if (typeof text !== "string") return null;
+  if (typeof text !== 'string') return null;
   const strArr = [];
   let startPosition = 0;
   if (len === undefined) {
@@ -16,11 +16,11 @@ const splitText = (text, len) => {
     startPosition += len;
   }
 
-  return strArr.join("\n");
+  return strArr.join('\n');
 };
 
-console.log(splitText("Cogitaredeficilesedutiliterest!"));
+console.log(splitText('Cogitaredeficilesedutiliterest!'));
 
-console.log(splitText("Cogitaredeficilesedutiliterest!", 4));
+console.log(splitText('Cogitaredeficilesedutiliterest!', 4));
 
 console.log(splitText(6, 4));

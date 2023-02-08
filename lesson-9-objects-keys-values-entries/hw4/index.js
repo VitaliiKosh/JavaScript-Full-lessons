@@ -1,23 +1,23 @@
 const rooms = {
   room1: [
-    { name: "Jack" },
-    { name: "Andrey" },
-    { name: "Ann" },
-    { name: "Vasyl" },
+    { name: 'Jack' },
+    { name: 'Andrey' },
+    { name: 'Ann' },
+    { name: 'Vasyl' },
   ],
 
   room2: [
-    { name: "Dan" },
-    { name: "Joshua" },
-    { name: "Robert" },
-    { name: "Fiona" },
+    { name: 'Dan' },
+    { name: 'Joshua' },
+    { name: 'Robert' },
+    { name: 'Fiona' },
   ],
 
   room3: [
-    { name: "Denis" },
-    { name: "Max" },
-    { name: "Alex" },
-    { name: "John" },
+    { name: 'Denis' },
+    { name: 'Max' },
+    { name: 'Alex' },
+    { name: 'John' },
   ],
 };
 

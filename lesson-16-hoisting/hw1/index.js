@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 export function createArrayOfFunctions(num) {
-  if (typeof num !== "number" && num !== undefined) return null;
+  if (typeof num !== 'number' && num !== undefined) return null;
   //  if (num === undefined) return [];
 
   var arr = [];

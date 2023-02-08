@@ -4,7 +4,7 @@ const filterNames = (arr, text) => {
 
 console.log(
   filterNames(
-    ["John", "Olivya", "Oleksandr", "Emanuel", "Vanya", "Nastya"],
-    "ya"
+    ['John', 'Olivya', 'Oleksandr', 'Emanuel', 'Vanya', 'Nastya'],
+    'ya'
   )
 );

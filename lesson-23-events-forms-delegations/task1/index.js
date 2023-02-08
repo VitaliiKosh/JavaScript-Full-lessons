@@ -21,15 +21,15 @@ const formData = formFields.reduce(function (acc, formField) {
 // const formData = Object.fromEntries(new FormData(formElem));
 */
 
-const emailInputElem = document.querySelector("#email");
-const passwordInputElem = document.querySelector("#password");
+const emailInputElem = document.querySelector('#email');
+const passwordInputElem = document.querySelector('#password');
 
-const emailErrorElem = document.querySelector(".error-text_email");
-const passwordErrorElem = document.querySelector(".error-text_password");
+const emailErrorElem = document.querySelector('.error-text_email');
+const passwordErrorElem = document.querySelector('.error-text_password');
 
-const isRequired = (value) => (value ? undefined : "Required");
+const isRequired = (value) => (value ? undefined : 'Required');
 const isEmail = (value) =>
-  value.includes("@") ? undefined : "Should be an email";
+  value.includes('@') ? undefined : 'Should be an email';
 
 const validatorsByField = {
   email: [isRequired, isEmail],
@@ -41,23 +41,23 @@ const validate = (fieldName, value) => {
   return validators
     .map((validator) => validator(value))
     .filter((errorText) => errorText)
-    .join(", ");
+    .join(', ');
 };
 
 const onEmailChange = (event) => {
-  const errorText = validate("email", event.target.value);
+  const errorText = validate('email', event.target.value);
   emailErrorElem.textContent = errorText;
 };
 
 const onPasswordChange = (event) => {
-  const errorText = validate("password", event.target.value);
+  const errorText = validate('password', event.target.value);
   passwordErrorElem.textContent = errorText;
 };
 
-emailInputElem.addEventListener("input", onEmailChange);
-passwordInputElem.addEventListener("input", onPasswordChange);
+emailInputElem.addEventListener('input', onEmailChange);
+passwordInputElem.addEventListener('input', onPasswordChange);
 
-const formElem = document.querySelector(".login-form");
+const formElem = document.querySelector('.login-form');
 
 const onFormSubmit = (event) => {
   event.preventDefault();
@@ -69,4 +69,4 @@ const onFormSubmit = (event) => {
   alert(JSON.stringify(formData));
 };
 
-formElem.addEventListener("submit", onFormSubmit);
+formElem.addEventListener('submit', onFormSubmit);

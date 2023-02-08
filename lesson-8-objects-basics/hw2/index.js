@@ -1,11 +1,11 @@
 const user = {
-  name: "Tom",
+  name: 'Tom',
   age: 17,
-  hobby: "football",
+  hobby: 'football',
   married: false,
-  "favorite music": "rock",
+  'favorite music': 'rock',
   address: {
-    country: "Ukraine",
+    country: 'Ukraine',
     building: 17,
   },
 };
@@ -14,7 +14,7 @@ console.log(user);
 
 /* присвой объекту свойство hobby со значением 'football' с помощью точки */
 
-const anotherKey = "married";
+const anotherKey = 'married';
 /* название свойства хранится в переменной anotherKey. Присвой объекту такое свойство со значением false */
 
 /* присвой объекту свойство 'favorite music' со значением 'rock' */

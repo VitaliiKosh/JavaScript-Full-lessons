@@ -16,8 +16,8 @@ function saveFuncCalls(func) {
   return function withMemo() {
     // eslint-disable-next-line prefer-rest-params
     memo.push(Array.from(arguments));
-    console.log("in withMemo func this", this);
-    console.log("memo:", memo);
+    console.log('in withMemo func this', this);
+    console.log('memo:', memo);
 
     withMemo.callsHistory = memo;
     // eslint-disable-next-line prefer-rest-params
@@ -51,7 +51,7 @@ addDeltaWithMemory.callsHistory; // ===> [ [[111, 22, 55, 4], 8], [[9, 1, -8, 15
 
 // example 3
 const user = {
-  name: "John",
+  name: 'John',
   sayHi() {
     return this.name;
   },
@@ -59,7 +59,7 @@ const user = {
 
 const sayHiWithMemory = saveFuncCalls(user.sayHi);
 // sayHiWithMemory(); // ===> throw error // because sayHiWithMemory lost context
-const sayHiWithMemoryBinded = sayHiWithMemory.bind({ name: "Tom" });
+const sayHiWithMemoryBinded = sayHiWithMemory.bind({ name: 'Tom' });
 console.log(sayHiWithMemoryBinded()); // ===> Tom // because we fixed context with bind and run functon again
 
 console.log(sayHiWithMemory.callsHistory); // [ [] ]

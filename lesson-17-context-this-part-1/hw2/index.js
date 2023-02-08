@@ -1,6 +1,6 @@
 /* ===> 1 <=== */
 const student = {
-  name: "Tom",
+  name: 'Tom',
 };
 
 function sayName() {
@@ -13,11 +13,11 @@ sayName.apply(student);
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
 // ... your code here
-sayName.apply({ name: "Bruce" });
+sayName.apply({ name: 'Bruce' });
 
 /* ===> 2 <=== */
 const company = {
-  companyName: "Microsoft",
+  companyName: 'Microsoft',
 };
 
 function greeting(firstName, lastName) {
@@ -30,12 +30,12 @@ function greeting(firstName, lastName) {
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
 // ... your code here
-greeting.apply(company, ["Bob", "Marley"]);
+greeting.apply(company, ['Bob', 'Marley']);
 
 /* ===> 3 <=== */
 const country = {
-  countryName: "Ukraine",
-  capital: "Kyiv",
+  countryName: 'Ukraine',
+  capital: 'Kyiv',
 };
 
 function getPopulation(population) {
@@ -54,9 +54,9 @@ console.log(result);
 /* ===> 4 <=== */
 const transaction = {
   amount: 1200,
-  operation: "sell",
-  currency: "USD",
-  exchange: "NYSE",
+  operation: 'sell',
+  currency: 'USD',
+  exchange: 'NYSE',
   printTransaction() {
     console.log(
       `${this.amount} ${this.currency} - ${this.operation} on ${this.exchange}`
@@ -66,9 +66,9 @@ const transaction = {
 
 const anotherTransaction = {
   amount: 400,
-  operation: "buy",
-  currency: "USD",
-  exchange: "NASDAQ",
+  operation: 'buy',
+  currency: 'USD',
+  exchange: 'NASDAQ',
 };
 
 // вызовите метод transaction.printTransaction так, чтобы в консоль вывелось

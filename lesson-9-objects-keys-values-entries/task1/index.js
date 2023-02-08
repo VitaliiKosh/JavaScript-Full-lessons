@@ -1,5 +1,5 @@
 const users = {
-  "John Doe": 19,
+  'John Doe': 19,
   Tom: 17,
   Bob: 18,
 };

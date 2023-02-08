@@ -1,9 +1,9 @@
 const splitString = (text, len) => {
-  if (typeof text !== "string") return null;
+  if (typeof text !== 'string') return null;
   const strArr = [];
   const lastElem = strArr.length - 1;
   let startPosition = 0;
-  const dotStr = ".";
+  const dotStr = '.';
   if (len === undefined) {
     // eslint-disable-next-line no-param-reassign
     len = 10;
@@ -25,8 +25,8 @@ const splitString = (text, len) => {
   return strArr;
 };
 
-console.log(splitString("Cogitaredeficilesedutiliterest!"));
+console.log(splitString('Cogitaredeficilesedutiliterest!'));
 
-console.log(splitString("Cogitaredeficilesedutiliterest!", 4));
+console.log(splitString('Cogitaredeficilesedutiliterest!', 4));
 
 console.log(splitString(6, 4));

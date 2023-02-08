@@ -6,11 +6,11 @@ function defer(func, ms) {
 }
 
 const user = {
-  name: "Tom",
+  name: 'Tom',
   sayHi() {
     console.log(`Hi, I'm ${this.name}!`);
   },
 };
 
 const deferredHi = defer(user.sayHi, 1000);
-deferredHi.call({ name: "Bob" });
+deferredHi.call({ name: 'Bob' });

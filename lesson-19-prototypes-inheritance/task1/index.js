@@ -9,7 +9,7 @@ const vehicle = {
 };
 
 const ship = {
-  name: "Argo",
+  name: 'Argo',
   startMachine() {
     console.log(`${this.name} lifting anchor up`);
     vehicle.move.call(ship);

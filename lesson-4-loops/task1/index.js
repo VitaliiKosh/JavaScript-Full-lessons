@@ -8,4 +8,4 @@ while (m >= 0 && m <= n) {
   m += 1;
 }
 
-console.log("Result:" + sum);
+console.log('Result:' + sum);

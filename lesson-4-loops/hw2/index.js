@@ -1,5 +1,5 @@
 // put your code here
-let sum = "";
+let sum = '';
 const n = 25;
 
 for (let i = 1; i <= n; i += 1) {

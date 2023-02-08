@@ -10,7 +10,7 @@ const getMinSquaredNumber = (arr) => {
 };
 
 console.log(getMinSquaredNumber([-7, 3, -2, 6, 45, -20])); // ==> 4
-console.log(getMinSquaredNumber("-7, 3, -2, 6, 45, -20")); // ==> null
+console.log(getMinSquaredNumber('-7, 3, -2, 6, 45, -20')); // ==> null
 console.log(getMinSquaredNumber([])); // ==> null
 
 /*

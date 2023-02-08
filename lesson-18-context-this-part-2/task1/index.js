@@ -1,9 +1,9 @@
 const event = {
   guests: [
-    { name: "John", age: 18, email: "example@server.com" },
-    { name: "Bob", age: 17, email: "example2@server.com" },
+    { name: 'John', age: 18, email: 'example@server.com' },
+    { name: 'Bob', age: 17, email: 'example2@server.com' },
   ],
-  message: "Welcome to the party!",
+  message: 'Welcome to the party!',
   getInvitations() {
     return this.guests
       .filter(({ age }) => age >= 18)
